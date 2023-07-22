@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body {
+    min-width: 100vw;
+    background-color: black;
+}
+
+span {
+    color: #d3ad7f;
+}
+
+.shoppingCar {
+    width: 500px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:15vh;
+    right: 10vw;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px 8px 0 0;
+}
+
+.shoppingCar header{
+    display: none;
+    justify-content:center;
+    align-items: center;
+    background-color: #d3ad7f;
+    color: white;
+    width: 498px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 8px 8px 0 0;
+ }
+
+ .shoppingCar, .headerShopping {
+  animation: fadeInOut 0.3s forwards;
+}
+
+
+.show {
+  display: flex;
+}
+
+#buys {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    }
+
+.buy {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    border-bottom: 1px solid white;
+}
+
+
+.moreLessButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    position: absolute;
+    user-select: none;
+    margin-top: 30px;
+    right: 5px;
+}
+
+.name-price {
+    display: flex;
+    flex-direction: column;
+    margin-left:10px ;
+    }
+
+.price {
+  color: #d3ad7f;
+}
+
+.moreLessButtons button {
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: #d3ad7f;
+    color:black;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.delete { 
+   position: absolute;
+   display: flex;
+   width: 35px;
+   height: 35px;
+   border: none;
+   background-color: #d3ad7f;
+   border-radius: 50%;
+   font-size: 30px;
+   justify-content: center;
+   align-items: center;
+   right: 5px;
+   top:10px;
+   background-image: url('https://cdn-icons-png.flaticon.com/512/5499/5499405.png');
+   background-size: cover;
+}
+
+.total {
+    display: none;
+    height: 150px;
+    border:1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+   backdrop-filter: blur(5px);
+   color: white;
+ }
+ 
+ .total h1 {
+    display: flex;
+    width: 90%;
+    margin-bottom: 15px;
+    justify-content: space-between;
+ }
+
+.total button {
+    display: flex;
+    background-color: #d3ad7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 60px;
+    font-size: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+ }
+
+.bar-container {
+    display: flex;
+    position: fixed;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+}
+
+.bar-container img {
+    height: 100%;
+}
+
+.bar-container .menu {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 1.5em;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.bar-container .menu li {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bar-container .menu li:hover {
+    color:#d3ad7f ;
+    border-bottom: 3px solid #d3ad7f;
+}
+
+.bar-container .buttons {
+   color: white;
+   font-size: 25px;
+   cursor: pointer;
+   user-select: none;
+}
+
+.bar-container .buttons i:first-child {
+    margin-right: 25px;
+}
+
+.home {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url('https://cdn.pixabay.com/photo/2017/09/04/18/39/coffee-2714970_1280.jpg');
+    background-size: cover;
+    align-items: center;
+}
+
+.home .text {
+    color: #d3ad7f;
+    width: 50vw;
+    font-size: 3.5em;
+    margin-left: 1.5em;
+}
+
+.home .text p {
+    color: white;
+    font-size: 0.5em;
+}
+
+.about {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.about h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about div {
+    display: flex;
+    height: 60vh;
+    width: 75%;
+    background-color: rgb(22, 22, 22);
+}
+
+.about div img {
+    width: 50%;
+}
+
+.about div .text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about div .text h2 {
+    font-size: 2.5em;
+    margin: 10px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.about .text p {
+    margin: 10px;
+    color: white;
+}
+
+.about .text button {
+    width: 50%;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #d3ad7f;
+}
+
+
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+}
+
+.menu-container h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 2.5em;
+    margin-bottom: 30px;
+}
+
+.coffee-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: center;
+    list-style:none;
+}
+
+.coffee-container .coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 480px;
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+
+.coffee img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.coffee h1 {
+    font-size: 2em;
+    margin: 8px;
+}
+
+.coffee .price {
+    color: white;
+    margin: 7px;
+}
+
+.coffee button {
+    width: 75%;
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+    background-color: #d3ad7f;
+    border: none;
+}
+
+.add:hover{
+  background-color: #7c5a30;
+  cursor: pointer;
+}
+
+.products {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+.products #header {
+    color: white;
+    font-size: 50px;
+    margin-top: 2.5em;
+    margin-bottom: 30px;
+}
+
+.products h1 {
+    color: white;
+    font-size: 2em;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: center;
+    list-style:none;
+}
+
+
+.products-container .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: 1px solid grey;
+}
+
+
+.buttons-container {
+    padding: 25px;
+   
+}
+
+
+.buttons-container i{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    border:1px solid grey;
+    background: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.buttons-container i:hover {
+    background-color: #D3AD7f;
+}
+
+.add {
+  background-color: #7c5a30;
+}
+
+.product {
+    margin: 10px;
+}
+
+.product img {
+    width: 250px;
+}
+
+.product h1 {
+    margin: 20px;
+}
+
+.product .prices {
+    color:white;
+    margin: 20px;
+}
+
+.product .addProduct {
+  font-size: 25px;
+}
+
+#star {
+    color: #d3ad7f;
+    font-size: 20px;
+}
+
+.review-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+.review-container h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 2.5em;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.review {
+    width: 400px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    color: white;
+    margin: 10px;
+}
+
+
+.review p {
+    padding: 30px;
+    text-align: center;
+}
+
+.review .profile {
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    border-radius:50%;
+    background-image: url('https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+}
+
+.review .stars {
+    color: #d3ad7f;
+    margin: 20px;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+.contact h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 2em;
+    margin-bottom: 30px;
+}
+
+.contact .contact-container {
+    display: flex;
+    width: 75%;
+    background-color: rgb(22, 22, 22);
+}
+
+.contact-container .gps {
+    width: 50%;
+}
+
+.contact-container .gps img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-container form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container form div {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    border:1px solid grey;
+    margin: 10px;
+    align-items: center;
+}
+
+.contact-container input {
+    height: 100%;
+    width: 80%;
+    border: none;
+    outline: none;
+    background:none;
+    font-size: 25px;
+    color: white;
+}
+
+.contact-container form i {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+}
+
+.contact-container form button {
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #d3ad7f;
+}
+
+.footer footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    margin-top: 1.5em;
+    border-top: 1px solid grey;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+.footer .social button {
+    margin: 10px;
+    margin-bottom: 0;
+    border: 1px solid grey;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer .social button:hover {
+    background-color: #d3ad7f;
+
+}
+
+.footer .social i {
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  1% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+    
+  .bar-container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+  
+    .bar-container img {
+      width: 80px;
+    }
+  
+    .bar-container .menu {
+      margin: 10px;
+      font-size: 1em;
+    }
+
+    .bar-container .menu li {
+        font-size: 14px;
+        margin-right: 7px;
+    }
+
+    .shoppingCar {
+      display: flex;
+      margin-top: 20px;
+      width: 400px;
+      background-color: black;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    .shoppingCar header {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .shoppingCar .buy{
+      width: 100%;
+    }
+
+    .shoppingCar .buy .moreLestButtons {
+      margin-right: 10px;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+  
+    .home .text {
+      text-align: center;
+      width: 90%;
+      font-size: 2em;
+      margin-top: 20vh;
+      margin-left: 0;
+    }
+  
+    .home .text p {
+      margin-bottom: 30px;
+      font-size: 0.8em;
+    }
+  
+    .about div {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .about div img {
+      width: 100%;
+    }
+  
+    .about div .text {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .about div .text h2 {
+      font-size: 1.5em;
+    }
+  
+    .about .text p {
+      margin: 10px;
+      font-size: 0.8em;
+    }
+  
+    .about .text button {
+      font-size: 20px;
+      margin: 20px;
+      padding: 5px;
+    }
+  
+    .menu-container h1 {
+      font-size: 30px;
+    }
+  
+    .coffee-container .coffee {
+      width: 350px;
+      height: 350px;
+    }
+  
+    .coffee img {
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+    }
+  
+    .coffee h1 {
+      font-size: 1.5em;
+      margin: 8px;
+    }
+  
+    .coffee .price {
+      margin: 7px;
+      font-size: 1em;
+    }
+  
+    .coffee button {
+      font-size: 1em;
+      padding: 10px;
+      margin-bottom: 25px;
+    }
+  
+    .products #header {
+      font-size: 30px;
+    }
+  
+    .products h1 {
+      font-size: 1.5em;
+    }
+  
+    .products-container .product {
+      width:350px;
+    }
+  
+    .product img {
+      width: 200px;
+    }
+  
+    .product h1 {
+      margin: 10px;
+      font-size: 1.2em;
+    }
+  
+    .product .prices {
+      margin: 10px;
+      font-size: 1.2em;
+    }
+  
+    .review-container h1 {
+      font-size: 30px;
+    }
+  
+    .reviews {
+      width: 100%;
+    }
+  
+    .review {
+      width: 100%;
+    }
+  
+    .review p {
+      padding: 15px;
+    }
+  
+    .review .profile {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+  
+    .review .stars {
+      margin: 10px;
+      font-size: 15px;
+    }
+  
+    .contact h1 {
+      font-size: 30px;
+    }
+  
+    .contact .contact-container {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .contact-container .gps {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .contact-container form {
+      width: 100%;
+    }
+  
+    .contact-container form div {
+      width: 90%;
+      height: 40px;
+    }
+  
+    .contact-container input {
+      width: 100%;
+      font-size: 20px;
+    }
+  
+    .contact-container form i {
+      font-size: 20px;
+      margin: 5px;
+    }
+  
+    .contact-container form button {
+      font-size: 25px;
+      margin: 10px;
+      padding: 5px;
+    }
+  
+    .footer footer {
+      font-size: 25px;
+    }
+
+    .footer footer h1 {
+        text-align: center;
+    }
+  
+    .footer .social button {
+      margin: 10px;
+      padding: 5px;
+    }
+  
+    .footer .social i {
+      font-size: 25px;
+      padding: 10px;
+    }
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

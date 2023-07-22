@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+</head>
+<body>
+
+    <header class="bar-container">
+        <img src="pngegg.png" alt="logo">
+        <ul class="menu">
+          <li data-target="home">Home</li>
+          <li data-target="about">About</li>
+          <li data-target="menu-container">Menu</li>
+          <li data-target="products">Products</li>
+          <li data-target="review-container">Review</li>
+          <li data-target="contact">Contact</li>
+        </ul>
+      
+        <div class="buttons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart cartBtn"></i>
+        </div>
+    </header>
+      
+<section class="shoppingCar">
+    <header>Tu Carrito</header>
+
+    <div id="buys"></div>
+
+
+    <div class="total">
+        <h1>Tu total: <span id="totalPay">0$</span></h1>
+        <button id="payBtn">Pagar</button>
+    </div>
+</section>
+
+
+    <section class="home">
+        <div class="text">
+            <h1>FRESH COFFEE IN THE MORNING</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati neque eum, facere praesentium tempora dolores reiciendis, veritatis pariatur animi aut exercitationem omnis magnam iste quisquam quasi velit nemo natus.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <h1><span>ABOUT</span> US</h1>
+        <div>
+            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwY3VwfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <div class="text">
+            <h2>What Makes Our Coffe special?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo 
+                architecto animi quibusdam, doloremque, consectetur repellendus, 
+                nesciunt id labore iusto ipsam atque quos assumenda modi! Iusto, 
+                sint. Temporibus mollitia aspernatur architecto. <br><br>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo 
+                architecto animi quibusdam, doloremque, consectetur repellendus, 
+                nesciunt id labore iusto ipsam atque quos assumenda modi! Iusto, 
+                sint. Temporibus mollitia aspernatur architecto. </p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-container">
+        <h1>OUR <span>MENU</span></h1>
+        <ul class="coffee-container">
+            <li class="coffee">
+                <img src="https://images.unsplash.com/photo-1554600740-951beab4712b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29mZmVlJTIwY3VwfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+                <h1 class="name">Tasy And Healty</h1>
+                <h2 class="price">$15.99</h2>
+                <button class="add">Add to Cart</button>
+            </li>
+
+            <li class="coffee">
+                <img src="https://cdn.pixabay.com/photo/2017/03/13/12/34/coffee-2139592_640.jpg" alt="" class="productPhoto">
+                <h1 class="name">Tasy And Healty</h1>
+                <h2 class="price">$15.99</h2>
+                <button class="add">Add to Cart</button>
+            </li>
+
+            <li class="coffee">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/02/10/caffeine-1866758_640.jpg" alt="" class="productPhoto">
+                <h1 class="name">Tasy And Healty</h1>
+                <h2 class="price">$15.99</h2>
+                <button class="add">Add to Cart</button>
+            </li>
+            <li class="coffee">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/04/31/caffeine-1867326_640.jpg" alt="" class="productPhoto">
+                <h1 class="name">Tasy And Healty</h1>
+                <h2 class="price">$15.99</h2>
+                <button class="add">Add to Cart</button>
+            </li>
+            <li class="coffee">
+                <img src="https://media.istockphoto.com/id/1365835656/it/foto/una-tazza-di-caff%C3%A8-latte-su-un-tavolo-di-legno.jpg?b=1&s=170667a&w=0&k=20&c=c9xi9RaWsMkTGKb1FIX5EWocCenjm40DOvlN07cFXYA=" alt="" class="productPhoto">
+                <h1 class="name">Tasy And Healty</h1>
+                <h2 class="price">$15.99</h2>
+                <button class="add">Add to Cart</button>
+            </li>
+            <li class="coffee">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="productPhoto">
+                <h1 class="name">Tasy And Healty</h1>
+                <h2 class="price">$15.99</h2>
+                <button class="add">Add to Cart</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="products">
+        <h1 id="header">LASTEST <span>PRODUCTS</span></h1>
+        <ul class="products-container">
+            <li class="product">
+                <div class="buttons-container">
+                    
+                        <i class="fas fa-shopping-cart cartIcon"></i>
+                    
+                   
+                        <i class="fas fa-heart"></i>
+                    
+                   
+                        <i class="fas fa-eye"></i>
+                    
+                </div>
+
+                    <img src="pngegg (1).png" alt="">
+                    <h1 class="name">Fresh Coffe</h1>
+                <div class="stars">
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                </div>
+
+                <h2 class="price">$15.99</h2>
+            </li>
+
+            <li class="product">
+                <div class="buttons-container">
+                    
+                        <i class="fas fa-shopping-cart cartIcon"></i>
+                    
+                   
+                        <i class="fas fa-heart"></i>
+                    
+                 
+                        <i class="fas fa-eye"></i>
+                   
+                </div>
+
+                    <img src="pngegg (1).png" alt="" class="productPhoto">
+                    <h1 class="name">Fresh Coffe</h1>
+                <div class="stars">
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                </div>
+
+                <h2 class="price">$15.99</h2>
+            </li>
+
+            <li class="product">
+                <div class="buttons-container">
+                    
+                        <i class="fas fa-shopping-cart cartIcon"></i>
+                
+                        <i class="fas fa-heart"></i>
+                    
+                        <i class="fas fa-eye"></i>
+                 
+                </div>
+
+                    <img src="pngegg (1).png" alt="" class="productPhoto">
+                    <h1 class="name">Fresh Coffe</h1>
+                <div class="stars">
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                </div>
+
+                <h2 class="price">$15.99</h2>
+            </li>
+
+            <li class="product">
+                <div class="buttons-container">
+                    
+                        <i class="fas fa-shopping-cart cartIcon"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    
+                </div>
+
+                    <img src="pngegg (1).png" alt="" class="productPhoto">
+                    <h1 class="name">Fresh Coffe</h1>
+                <div class="stars">
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                </div>
+
+                <h2 class="price">$15.99</h2>
+            </li>
+
+            <li class="product">
+                <div class="buttons-container">
+                    
+                        <i class="fas fa-shopping-cart cartIcon"></i>
+                   
+                    
+                        <i class="fas fa-heart"></i>
+                    
+                    
+                        <i class="fas fa-eye"></i>
+                    
+                </div>
+
+                    <img src="pngegg (1).png" alt="" class="productPhoto">
+                    <h1 class="name">Fresh Coffe</h1>
+                <div class="stars">
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                </div>
+
+                <h2 class="price">$15.99</h2>
+            </li>
+
+            <li class="product">
+                <div class="buttons-container">
+                    
+                        <i class="fas fa-shopping-cart cartIcon"></i>
+                    
+                    
+                        <i class="fas fa-heart"></i>
+                   
+                    
+                        <i class="fas fa-eye"></i>
+                    
+                </div>
+
+                    <img src="pngegg (1).png" alt="" class="productPhoto">
+                    <h1 class="name">Fresh Coffe</h1>
+                <div class="stars">
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                    <i class="fas fa-star" id="star"></i>
+                </div>
+
+                <h2 class="price">$15.99</h2>
+            </li>
+        </ul>
+    </section>
+
+    <section class="review-container">
+        <h1>CUSTOMER'S <span>REVIEW</span></h1>
+
+        <ul class="reviews">
+            <li class="review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisici
+                    ng elit. Explicabo ratione nam dolores commodi
+                     officia quisquam deserunt repellendus vel, au
+                     t unde illo, aspernatur quaerat 
+                    consequatur tenetur voluptatum blanditiis 
+                    consectetur totam cum.</p>
+                
+                <div class="profile"></div>
+
+                <h2>John Deo</h2>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </li>
+            <li class="review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisici
+                    ng elit. Explicabo ratione nam dolores commodi
+                     officia quisquam deserunt repellendus vel, au
+                     t unde illo, aspernatur quaerat 
+                    consequatur tenetur voluptatum blanditiis 
+                    consectetur totam cum.</p>
+                
+                <div class="profile"></div>
+
+                <h2>John Deo</h2>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </li>
+            <li class="review">
+                <p>Lorem ipsum dolor sit amet consectetur adipisici
+                    ng elit. Explicabo ratione nam dolores commodi
+                     officia quisquam deserunt repellendus vel, au
+                     t unde illo, aspernatur quaerat 
+                    consequatur tenetur voluptatum blanditiis 
+                    consectetur totam cum.</p>
+                
+                <div class="profile"></div>
+
+                <h2>John Deo</h2>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h1><span>CONTACT</span> US</h1>
+
+    <div class="contact-container">
+        <div class="gps">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Jkm0e64AdmscJwHfRGjNdR73_Q547PO_2PYahdq_67Y-YF43OaQVkP66QoYznve3dNQ&usqp=CAU" alt="">
+        </div>
+
+        <form action="">
+            <h1>GET IN TOUCH</h1>
+
+            <div class="name">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" placeholder="name">
+            </div>
+
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <input type="text" id="email" placeholder="email">
+            </div>
+
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <input type="text" id="phone" placeholder="number">
+            </div>
+
+            <button>Contact Now</button>
+        </form>
+    </div>
+    </section>
+
+    <section class="footer">
+        <footer>
+            <h1>
+            Developed By <span>JuanCoding</span>
+            </h1>
+            <div class="social">
+                <button>
+                    <a href="https://www.instagram.com/jc.08v" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="https://twitter.com/JuanCaicedo234" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a> 
+                </button>
+                <button>
+                    <a href="https://www.facebook.com/juanesteban.caicedovalencia.3" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </button>
+            </div>
+        </footer>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+</html>
