@@ -84,7 +84,8 @@ function addToCart(event) {
   const cartIcon = event.currentTarget.querySelector(".cartIcon");
   
   if (isCoffee) {
-    button.innerHTML = "IN CART"
+    button.innerHTML = "IN " + `<i class="fas fa-shopping-cart"></i>`;
+
     button.classList.add("disabled")
   } else if (isIcon){
     console.log(cartIcon);
@@ -196,6 +197,26 @@ icon.forEach(i => {
     event.stopPropagation();
   })
 })
+
+const contactName = document.querySelector(".contact .name input");
+const contactEmail = document.querySelector(".contact .email input");
+const contactPhone = document.querySelector(".contact .phone input");
+
+
+contactName.addEventListener("input", () => {
+  contactName.value = contactName.value.replace(/[^a-zA-Z\s]+/g, "");
+});
+
+contactEmail.addEventListener("input", () => {
+  contactEmail.value = contactEmail.value.replace(/\s/,"")
+})
+
+contactPhone.addEventListener("input", () => {
+
+  contactPhone.value = contactPhone.value.replace(/[^0-9]/g,"")
+})
+
+
 
 
 

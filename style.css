@@ -537,7 +537,7 @@ span {
     width: 80%;
     border: none;
     outline: none;
-    background:none;
+    background-color: transparent;
     font-size: 25px;
     color: white;
 }
